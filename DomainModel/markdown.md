@@ -2,11 +2,13 @@
 
 canvasDomainModel
         
-    
-    
-    
-    
-    
+    Dashboard --|> Courses
+    History --|> Dashboard
+    Inbox --|> Courses
+    Groups --|> Courses
+    Account --|> Courses
+
+
     class Dashboard {
         +announcements()
         +assignments()
