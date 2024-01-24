@@ -56,7 +56,7 @@ classDiagram
 
     }
 
-    class Indox {
+    class Inbox {
         +courseSelection()
         +inboxCriteria()
         +search()
