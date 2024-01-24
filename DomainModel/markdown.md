@@ -1,32 +1,40 @@
 ```mermaid
-        
-    Dashboard --|> Courses
-    History --|> Dashboard
-    Inbox --|> Courses
-    Groups --|> Courses
-    Account --|> Courses
+
+classDiagram
+
+    Courses <|-- Dashboard
+    Dashboard <|-- History
+    Courses <|-- Inbox
+    Courses <|-- Groups
+    Courses <|-- Account
+    Courses <|-- User
+    Groups <|-- User
+    Calendar <|-- User
+    Inbox <|-- User
+    History <|-- User
+    Dashboard <|-- User
 
 
     class Dashboard {
         +announcements()
         +assignments()
-        newAddition()
+        -newAddition()
         +myGrades()
-        bell()
-        view()
+        -bell()
+        -view()
         +courses()
 
     }
 
     class Account {
         +notifications() 
-        profile()
+        -profile()
         +files()
-        settings()
-        qrForMobileLogin()
+        -settings()
+        -qrForMobileLogin()
         +globalAnnouncements()
-        logout()
-        contrastSetting()
+        -logout()
+        -contrastSetting()
 
     }
 
@@ -43,8 +51,8 @@
     }
 
     class Calendar {
-        view()
-        createNewEvent()
+        -view()
+        -createNewEvent()
 
     }
 
@@ -54,7 +62,7 @@
         +search()
         +contacts()
         +newMessage()
-        messageOptions()
+        -messageOptions()
 
     }
 
@@ -66,9 +74,18 @@
     }
 
     class Help {
-        canvasGuide()
-        otherResources()
+        -canvasGuide()
+        -otherResources()
 
+    }
+
+    class User {
+        +role
+        +userName
+        -email
+        -password
+        -login()
+        -logout()
     }
 
 ```
