@@ -1,6 +1,4 @@
 ```mermaid
-
-canvasDomainModel
         
     Dashboard --|> Courses
     History --|> Dashboard
