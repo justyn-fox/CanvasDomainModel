@@ -10,23 +10,23 @@
     class Dashboard {
         +announcements()
         +assignments()
-        -newAddition()
+        newAddition()
         +myGrades()
-        -bell()
-        -view()
+        bell()
+        view()
         +courses()
 
     }
 
     class Account {
         +notifications() 
-        -profile()
+        profile()
         +files()
-        -settings()
-        -qrForMobileLogin()
+        settings()
+        qrForMobileLogin()
         +globalAnnouncements()
-        -logout()
-        -contrastSetting()
+        logout()
+        contrastSetting()
 
     }
 
@@ -43,8 +43,8 @@
     }
 
     class Calendar {
-        -view()
-        -createNewEvent()
+        view()
+        createNewEvent()
 
     }
 
@@ -54,7 +54,7 @@
         +search()
         +contacts()
         +newMessage()
-        -messageOptions()
+        messageOptions()
 
     }
 
@@ -66,8 +66,8 @@
     }
 
     class Help {
-        -canvasGuide()
-        -otherResources()
+        canvasGuide()
+        otherResources()
 
     }
 
